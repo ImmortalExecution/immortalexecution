@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immortal Execution</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Load Inter font -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white">
+
+    <!-- Header and Navigation -->
+    <header class="bg-zinc-900 shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <!-- Band Name / Logo -->
+            <a href="#" class="text-3xl font-bold uppercase tracking-wider hover:text-red-600 transition-colors">
+                Immortal Execution
+            </a>
+            
+            <!-- Navigation Links -->
+            <nav class="hidden md:block">
+                <ul class="flex space-x-8">
+                    <li><a href="#music" class="text-lg font-medium hover:text-red-500 transition-colors">Music</a></li>
+                    <li><a href="#merch" class="text-lg font-medium hover:text-red-500 transition-colors">Merch</a></li>
+                    <li><a href="#contact" class="text-lg font-medium hover:text-red-500 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-button" class="text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-zinc-800">
+            <ul class="flex flex-col items-center py-4 space-y-4">
+                <li><a href="#music" class="text-lg font-medium hover:text-red-500 transition-colors">Music</a></li>
+                <li><a href="#merch" class="text-lg font-medium hover:text-red-500 transition-colors">Merch</a></li>
+                <li><a href="#contact" class="text-lg font-medium hover:text-red-500 transition-colors">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="h-screen flex items-center justify-center bg-cover bg-center text-center p-4" style="background-image: url('https://placehold.co/1920x1080/1a1a1a/fff?text=Immortal+Execution+Live');">
+        <div class="bg-black bg-opacity-70 rounded-xl p-8 max-w-2xl mx-auto shadow-2xl">
+            <h1 class="text-5xl md:text-7xl font-bold uppercase tracking-wider mb-4 animate-pulse">Immortal Execution</h1>
+            <p class="text-xl md:text-2xl font-medium italic">Unleash the storm. Witness the judgment.</p>
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold uppercase text-center mb-12 border-b-4 border-red-600 pb-4">Latest Music</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Album 1 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Album+Art+1" alt="Album Art" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2 uppercase">Eternal Damnation</h3>
+                    <p class="text-zinc-400 mb-4">Released: 2024</p>
+                    <a href="#" class="inline-block bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Listen Now</a>
+                </div>
+            </div>
+            <!-- Album 2 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Album+Art+2" alt="Album Art" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2 uppercase">Gates of Perdition</h3>
+                    <p class="text-zinc-400 mb-4">Released: 2022</p>
+                    <a href="#" class="inline-block bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Listen Now</a>
+                </div>
+            </div>
+            <!-- Album 3 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Album+Art+3" alt="Album Art" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2 uppercase">Symphony of the Void</h3>
+                    <p class="text-zinc-400 mb-4">Released: 2020</p>
+                    <a href="#" class="inline-block bg-red-600 text-white font-bold py-3 px-6 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Listen Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Merch Section -->
+    <section id="merch" class="container mx-auto px-4 py-16">
+        <h2 class="text-4xl font-bold uppercase text-center mb-12 border-b-4 border-red-600 pb-4">Merchandise</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Merch Item 1 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=T-Shirt" alt="Merch T-Shirt" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2">Execution Tee</h3>
+                    <p class="text-xl font-medium text-red-500 mb-4">$25.00</p>
+                    <button class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Buy Now</button>
+                </div>
+            </div>
+            <!-- Merch Item 2 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Hoodie" alt="Merch Hoodie" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2">Perdition Hoodie</h3>
+                    <p class="text-xl font-medium text-red-500 mb-4">$50.00</p>
+                    <button class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Buy Now</button>
+                </div>
+            </div>
+            <!-- Merch Item 3 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Vinyl+Record" alt="Merch Vinyl" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2">Vinyl Record</h3>
+                    <p class="text-xl font-medium text-red-500 mb-4">$30.00</p>
+                    <button class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Buy Now</button>
+                </div>
+            </div>
+            <!-- Merch Item 4 -->
+            <div class="bg-zinc-800 rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+                <img src="https://placehold.co/600x600/333/fff?text=Hat" alt="Merch Hat" class="w-full h-auto object-cover">
+                <div class="p-6 text-center">
+                    <h3 class="text-2xl font-bold mb-2">Execution Snapback</h3>
+                    <p class="text-xl font-medium text-red-500 mb-4">$20.00</p>
+                    <button class="w-full bg-red-600 text-white font-bold py-3 rounded-lg hover:bg-red-700 transition-colors shadow-lg">Buy Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer Section -->
+    <footer id="contact" class="bg-zinc-900 py-12">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold uppercase mb-4">Contact & Socials</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <!-- Social Icons -->
+                <a href="#" class="text-white hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M19.633 7.997c-.412.185-.852.311-1.309.369a4.47 4.47 0 0 0 1.932-1.236 8.448 8.448 0 0 1-1.472.533A4.453 4.453 0 0 0 14.072 6.1a4.469 4.469 0 0 0-4.468 4.468c0 .35.039.69.112 1.018A12.656 12.656 0 0 1 2.87 7.027a4.465 4.465 0 0 0 1.376 5.952c-.322-.01-.659-.1-.947-.268v.056a4.469 4.469 0 0 0 3.585 4.385c-.378.102-.782.154-1.199.157a4.484 4.484 0 0 1-.849-.08 4.485 4.485 0 0 0 4.168 3.111A8.948 8.948 0 0 1 3 20.449a12.64 12.64 0 0 0 6.84 2.012c8.204 0 12.701-6.792 12.701-12.693 0-.193-.004-.386-.012-.576a9.006 9.006 0 0 0 2.222-2.31z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.016 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-3.091 18c-3.321-.493-2.92-3.155-2.888-5.308.014-.997-.502-1.93-1.428-2.392-.934-.46-1.848.164-1.57 1.107.247.936.938 1.547 1.83 1.954.912.4-.176 1.764-1.442 1.884-.282.025-.56.02-1.272-.055-1.077-.116-2.126-.456-2.736-1.63-.448-.84-.576-1.868-.236-2.812.352-.924 1.18-.89 1.708-.857 2.07.126 3.12 1.34 3.738 2.766 1.096 2.57.17 6.076 2.922 6.61.944.186 1.854.212 2.656-.022 1.026-.272 1.638-.854 2.19-1.684.552-.83.742-1.782.52-2.79-.196-1.12.186-2.32-.42-3.236-.612-.916-1.53-.948-2.32-.888-1.5.114-2.894-.43-3.958-1.464-1.056-1.03-1.602-2.34-.344-3.212 1.082-.764 2.458-.89 3.528-.426 1.07.462 1.77 1.488 2.158 2.628.388 1.14-.158 2.18-.824 3.29-.668 1.1-1.674 2.062-2.784 2.668-1.106.606-2.14.778-2.928.846-.8.068-1.22.42-1.46.78-.178.27-.156.49-.074.83.078.33.24.6.496.79.256.19.782.35 1.134.426.354.076.716.03 1.156-.05.44-.08 1.36-.296 2.368-.696 1.008-.4 2.068-1.01 2.91-1.92.842-.91 1.442-2.1 1.696-3.26.254-1.16.07-2.394-.45-3.52-2.888-6.14-8.082-9.676-15.02-9.52-7.054.156-12.786 5.88-12.636 12.92.15 7.042 5.922 12.69 13.01 12.59 7.072-.08 12.73-5.748 12.63-12.82-.1-7.072-5.76-12.73-12.834-12.63z"/>
+                    </svg>
+                </a>
+                <a href="#" class="text-white hover:text-red-500 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm3.2 8.7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm-4.7 0a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm5.9 3.5c-.86 1.3-2.3 2.1-4.4 2.1s-3.54-.8-4.4-2.1c-.24-.37-.7-.5-1.07-.26-.37.24-.5.7-.26 1.07.6 1.02 1.57 1.8 2.8 2.37.52.24 1.07.36 1.63.36s1.11-.12 1.63-.36c1.23-.57 2.2-1.35 2.8-2.37.24-.37.11-.83-.26-1.07-.37-.24-.83-.11-1.07.26z"/>
+                    </svg>
+                </a>
+            </div>
+            <p class="text-zinc-500 text-sm">&copy; 2024 Immortal Execution. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu -->
+    <script>
+        document.getElementById('menu-button').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Hide mobile menu when a link is clicked
+        document.getElementById('mobile-menu').addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            }
+        });
+    </script>
+</body>
+</html>
